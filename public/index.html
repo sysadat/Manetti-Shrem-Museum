@@ -1,0 +1,133 @@
+<!-- This is the awful HTML comment syntax -->
+<!DOCTYPE html> <!-- Message to browser...I think I am HTML -->
+<html lang="en">
+<!-- My text is in English -->
+
+<head>
+  <meta charset="utf-8"> <!-- Binary encoding of characters -->
+  <title>Jan Shrem and Maria Menetti Shrem Museum of Art
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This will come in handy later -->
+
+  <!-- import the webpage's css -->
+  <!-- Link the reset.css and style.css files -->
+  <link rel="stylesheet" type="text/css" href="./reset.css">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+
+</head>
+
+<body>
+  <div id = "header">
+    <h3 id = "museumInfo">
+      <span id = "museumNameBlue">
+        jan shrem and maria
+        <span id ="museumNameRed">
+          menetti shrem museum
+        </span>
+        of art
+      </span>
+    </h3>
+    <div id = "generalInfo">
+      <a href="#default">home</a>
+      <a href="#default">visit</a>
+      <a href="#default">about</a>
+    </div>
+  </div>
+
+  <p id = "pageCount">
+  </p>
+
+  <header class = "pageTitle">
+    <h1>Stephen Kaltenbach: The Beginning and The End</h1>
+    <h2>On view January 26-May 10, 2020</h2>
+  </header>
+
+  <div class = "pictures">
+    <div class="slideshow">
+      <div class="index">1 / 4</div>
+      <img src="https://cdn.glitch.com/fc7853ba-36fa-474f-8a44-ceb8529ce04d%2Ffabric.jpg?v=1585885448867" style="width:100%">
+      <div class="caption">
+        <p>
+          Stephen Kaltenbach and guests, MODERN DRAPERY, 2020. Felt Fabric, 45 × 60 inches.
+        </p>
+      </div>
+    </div>
+
+    <div class="slideshow">
+      <div class="index">2 / 4</div>
+      <img src="https://cdn.glitch.com/fc7853ba-36fa-474f-8a44-ceb8529ce04d%2FfatherPortrait.jpg?v=1585885485697" style="width:100%">
+      <div class="caption">
+        <p>
+          Stephen Kaltenbach, Portrait of My Father, 1972-79. Acrylic on canvas, 114 × 170 <sup>3</sup>/<sub>4</sub> inches.
+        </p>
+      </div>
+    </div>
+
+    <div class="slideshow">
+      <div class="index">3 / 4</div>
+      <img src="https://cdn.glitch.com/fc7853ba-36fa-474f-8a44-ceb8529ce04d%2FroomCube.jpg?v=1585885550174" style="width:100%">
+      <div class="caption">
+        <p>
+          Stephen Kaltenbach, Room Cube, 1967. Blueprint, 18 × 24 inches, eidtion of 10.
+        </p>
+      </div>
+    </div>
+
+    <div class="slideshow">
+      <div class="index">4 / 4</div>
+      <img src="https://cdn.glitch.com/fc7853ba-36fa-474f-8a44-ceb8529ce04d%2FopenAfterDeath.jpg?v=1585885502367" style="width:100%">
+      <div class="caption">
+        <p>
+          Stephen Kaltenbach, OPEN AFTER MY DEATH, 1970. Mid steel, engraved, with unknown contents, 3×6×3 inches.
+        </p>
+      </div>
+    </div>
+
+    <button class="leftArrow" onclick="changeSlides(-1)">&#10094;</button>
+    <button class="rightArrow" onclick="changeSlides(1)">&#10095;</button>
+    
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="circle" onclick="currSlide(1)"></span>
+    <span class="circle" onclick="currSlide(2)"></span>
+    <span class="circle" onclick="currSlide(3)"></span>
+    <span class="circle" onclick="currSlide(4)"></span>
+  </div>
+
+  <main class = "mainBody">
+    <p>
+      During the late 1960s, after graduating from UC Davis (BA, 1966; MA, 1967) and moving to New York, Stephen Kaltenbach established a reputation in the emerging international field of Conceptual art. But in 1970, just as he was achieving career
+      success, Kaltenbach abruptly withdrew to California’s Central Valley, appearing to abandon Conceptual work in favor of the more traditional mediums of painting and sculpture. Coinciding with the 50th anniversary of his “dropout,” this
+      exhibition considers Kaltenbach’s engagement with time as a principal theme across his remarkably diverse career, which encompasses bronze time capsules, advertisements placed anonymously in Artforum magazine in 1968-69, and the monumental
+      photorealist painting Portrait of My Father (1972-79)
+    </p>
+      <br>
+    <p>Guest Curators: Constance Lewallen and Ted Mann</p>
+  </main>
+
+  <footer class = "stickyFooter">
+    <div>
+      <h3>manetti shrem museum</h3>
+      <p>254 Old Davis Rd. <br>Davis, CA 95616</p>
+    </div>
+    <div>
+      <h3>Hours</h3>
+      <ul>
+        <li>Tuesday, Wednesday, and Friday: Noon-6pm</li>
+        <li>Thursday: Noon-9pm</li>
+        <li>Saturday-Sunday: 11am-5pm</li>
+        <li>Monday: Closed</li>
+      </ul>
+    </div>
+    <div>
+      <h3>The Manetti Shrem Museum will be temporarily closed starting March 16, 2020</h3>
+      <p>This is to prioritize the health and safety of our students, faculty, and the community at large. Thank you for your patience.</p>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
